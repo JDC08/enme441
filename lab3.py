@@ -2,14 +2,14 @@
 #
 # Fill in the function below, following the assignment handout.  Do not change
 # the function name, and submit this file without renaming it.
-
+import network
 
 def get_ip():
     """Return the board's IP address on umd-iot as a string."""
     # YOUR CODE HERE
-    network.WLAN(network.STA_IF)
+    wlan = network.WLAN(network.STA_IF)
     ip = wlan.ifconfig()[0]
-    pass ip
+    return(ip)
 
 
 # The code below runs only when this file is executed directly (for example,
